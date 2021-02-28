@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display|Karla:400,700&display=swap");
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --greish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: var(--dark-violet);
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+.hamburger {
+  display: none;
+}
+.header-link {
+  color: var(--dark-grayish-violet);
+}
+.line-top,
+.line-top2 {
+  width: 150px;
+  height: 2px;
+  padding: 0;
+  margin: 10px 0;
+}
+.line-top {
+  background-color: var(--very-light-gray);
+}
+.line-top2 {
+  background-color: var(--dark-violet);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", sans-serif;
+}
+h1,
+h2 {
+  font-size: 4em;
+  position: relative;
+  padding-top: 50px;
+  margin: 0;
+}
+h3 {
+  font-size: 2em;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  font-family: bold;
+  color: var(--very-light-gray);
+  background-color: var(--dark-grayish-violet);
+}
+.btn:active {
+  font-family: bold;
+  color: var(--very-dark-violet);
+  background-color: var(--very-light-gray);
+  border-color: var(--very-light-gray);
+}
+.btn-reverse {
+  border: 2px solid var(--very-dark-violet);
+  border-color: var(--dark-violet);
+  color: var(--dark-violet);
+}
+.btn-reverse:active {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-violet);
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+.header-top {
+  padding: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex div {
+  flex: 1;
+}
+.fotter-content {
+  background-color: var(--very-light-gray);
+  align-items: flex-start;
+}
+.fotter-content li a:active {
+  text-decoration: underline;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+nav li {
+  margin-left: 30px;
+}
+nav li a {
+  color: var(--dark-grayish-violet);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header {
+  margin-bottom: 250px;
+  padding: 50px 0;
+  background-color: var(--dark-violet);
+  color: #ffff;
+  position: relative;
+}
+header * {
+  z-index: 1;
+}
+
+.intro-desktop {
+  max-width: 100%;
+  margin-bottom: -250px;
+}
+.content-fotter {
+  background-color: var(--dark-violet);
+  padding: 70px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.content-fotter h2 {
+  padding: 0;
+  color: #fff;
+  width: 50%;
+  font-size: 3em;
+}
+.trio {
+  max-width: 100%;
+}
+fotter {
+  display: flex;
+  background-color: var(--very-light-gray);
+}
+fotter h4 {
+  text-transform: uppercase;
+  color: var(--dark-grayish-violet);
+}
+
+fotter ul {
+  list-style-type: none;
+  padding: 0;
+}
+.icons li {
+  margin-left: 15px;
+}
+fotter li a {
+  color: var(--dark-violet);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.fotter-bottom {
+  background-color: var(--very-light-gray);
+  border-bottom: 1px solid var(--greish-blue);
+  /* margin-bottom: 30px; */
+}
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .hamburger {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .line-top,
+  .line-top2 {
+    display: none;
+  }
+  .humans {
+    padding-bottom: 20px;
+  }
+  .intro-desktop {
+    max-width: 100%;
+  }
+  .logo {
+    text-align: left;
+  }
+  .content-fotter h2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  fotter ul.flex {
+    flex-direction: row;
+  }
+  .icons {
+    padding-left: 10px;
+  }
+  fotter .flex div {
+    width: 100%;
+    text-align: center;
+  }
+  .fotter-content {
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .flex {
+    padding-bottom: 10px;
+    flex-direction: row;
+  }
+  .header_content {
+    flex-direction: column-reverse;
+  }
+}
